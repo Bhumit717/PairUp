@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="dvNAEMkOISFebRW3vrwvMOPSqOGsbTYUh20-Ztwn32g" />
+    <title>Embedded Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+       
+        }
+       
+        .background-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 0px; /* Initially hidden */
+            color: gray;
+            transition: font-size 0.5s ease-in-out; /* Smooth transition */
+        }
+        .background-text a {
+            text-decoration: none;
+            color: gray;
+        }
+        @media (max-width: 768px) {
+            .background-text {
+                font-size: 0px; /* Initially hidden on mobile */
+            }
+        }
+    </style>
+    <script>
+        function showText() {
+            document.querySelector('.background-text').style.fontSize = '16px'; /* Increase font size when website loads */
+            document.querySelector('.overlay').style.display = 'none'; /* Hide overlay when fully loaded */
+        }
+    </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = encodeURIComponent("User visited the website");
+    const url = `http://api.callmebot.com/text.php?source=web&user=@bhumitnasit&text=PairUp`;
+
+    // Use an image request to bypass mixed content errors
+    const img = new Image();
+    img.src = url;
+  });
+</script>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <iframe src="https://pairup-git-main-bhumitnasit1s-projects.vercel.app/" allowfullscreen onload="showText()"></iframe>
+    
+</body>
+</html>
