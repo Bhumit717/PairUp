@@ -1,117 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PairUp – Find Your Perfect Match</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join PairUp and find your perfect match! Discover meaningful connections every day with people who match your vibe." />
+  <meta name="keywords" content="PairUp, dating, match, find partner, relationships, connect, social app" />
+  <meta name="author" content="PairUp Team" />
+  
+  <!-- Google Search Console Verification -->
   <meta name="google-site-verification" content="dvNAEMkOISFebRW3vrwvMOPSqOGsbTYUh20-Ztwn32g" />
 
-  <!-- Title and Favicon -->
-  <title>PairUp – Make New Friends Online | Chat & Connect</title>
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
 
-  <!-- SEO Meta -->
-  <meta name="description" content="PairUp is a free online platform where you can meet new friends, chat with opposite-gender users, and connect safely. Join now and start meaningful conversations!" />
-  <meta name="keywords" content="PairUp, make friends online, chat, meet strangers, connect with people, opposite gender chat, online friendship, talk with new people, dating alternative" />
-  <meta name="author" content="Bhumit & Shubham" />
-
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="PairUp – Meet New People & Make Friends" />
-  <meta property="og:description" content="PairUp helps you chat, connect, and make new friends online. No downloads. Just fun connections." />
-  <meta property="og:image" content="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
-  <meta property="og:url" content="https://bhumit717.github.io/PairUp/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="PairUp – Make New Friends Online" />
-  <meta name="twitter:description" content="Fun and safe way to connect with people and make opposite-gender friends. Try PairUp!" />
-  <meta name="twitter:image" content="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
-
-  <!-- Schema.org JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "PairUp",
-    "url": "https://bhumit717.github.io/PairUp/",
-    "author": {
-      "@type": "Person",
-      "name": "Bhumit & Shubham"
-    },
-    "description": "PairUp is a website to chat and connect with opposite-gender users and make new friends online.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://bhumit717.github.io/PairUp/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <!-- Styles -->
   <style>
     body {
       margin: 0;
-      padding: 0;
-      overflow: hidden;
-      position: relative;
-      font-family: Arial, sans-serif;
-    }
-    iframe {
-      width: 100vw;
-      height: 100vh;
-      border: none;
-    }
-    .background-text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #fff0f3, #f5faff);
       display: flex;
       flex-direction: column;
-      gap: 5px;
-      font-size: 0px;
-      color: gray;
-      transition: font-size 0.5s ease-in-out;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
-    .background-text a {
-      text-decoration: none;
-      color: gray;
+
+    img.logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid #ff4b6e;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    @media (max-width: 768px) {
-      .background-text {
-        font-size: 0px;
-      }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff416c, #8e54e9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 20px 0;
+    }
+
+    .btn {
+      background-color: #ff4b6e;
+      color: white;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff335a;
     }
   </style>
-
-  <!-- Onload Script -->
-  <script>
-    function showText() {
-      document.querySelector('.background-text').style.fontSize = '16px';
-      document.querySelector('.overlay').style.display = 'none';
-    }
-  </script>
-
-  <!-- Visit Logger (CallMeBot) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const url = `http://api.callmebot.com/text.php?source=web&user=@bhumitnasit&text=PairUp Visit`;
-      const img = new Image();
-      img.src = url;
-    });
-  </script>
 </head>
 <body>
-  <div class="overlay"></div>
-  <iframe src="https://pairup-git-main-bhumitnasit1s-projects.vercel.app/" allowfullscreen onload="showText()"></iframe>
 
-  <!-- Hidden SEO Text -->
-  <div class="background-text">
-    <a href="#">PairUp – The easiest way to meet new people</a>
-    <a href="#">Chat with strangers and make opposite-gender friends</a>
-    <a href="#">Friendship website in India – free, fast, and secure</a>
-    <a href="#">PairUp lets you connect instantly, no registration</a>
-    <a href="#">Dating alternative to build real connections online</a>
-    <a href="#">Online chat platform to talk and build friendships</a>
-    <a href="#">Start chatting and discover someone new on PairUp</a>
-    <a href="#">Developed by Bhumit & Shubham</a>
-  </div>
+  <img class="logo" src="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" alt="PairUp Logo" />
+  <h1>Find Your Perfect Match</h1>
+  <p>Join PairUp and discover meaningful connections<br>every day.</p>
+  <button class="btn" onclick="window.location.href='https://pairup-git-main-bhumitnasit1s-projects.vercel.app/'">Get Started</button>
+
 </body>
 </html>
