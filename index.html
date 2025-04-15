@@ -2,116 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PairUp – Find Your Perfect Match</title>
 
-  <title>PairUp - India's Modern Matchmaking & Friendship Platform</title>
-  <meta name="description" content="PairUp is India's most trusted matchmaking and friendship platform. Meet your opposite-gender match, find friends, and start meaningful conversations instantly. 100% real profiles. Join now!" />
-  <meta name="robots" content="index, follow" />
+  <!-- SEO -->
+  <meta name="description" content="Join PairUp and find your perfect match! Discover meaningful connections every day with people who share your interests.">
+  <meta name="keywords" content="PairUp, dating app, social matchmaking, meet people, relationships, friendship, find partner">
+  <meta name="author" content="PairUp Team">
+  <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="dvNAEMkOISFebRW3vrwvMOPSqOGsbTYUh20-Ztwn32g" />
 
-  <!-- Open Graph / SEO -->
-  <meta property="og:title" content="PairUp – India's Modern Matchmaking Platform" />
-  <meta property="og:description" content="Make friends and find your perfect match instantly on PairUp. 100% verified profiles. Try it now!" />
-  <meta property="og:image" content="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png" />
-  <meta property="og:url" content="https://bhumit717.github.io/PairUp" />
+  <!-- Open Graph (for better social and search preview) -->
+  <meta property="og:title" content="PairUp – Find Your Perfect Match" />
+  <meta property="og:description" content="Discover meaningful connections with PairUp every day." />
+  <meta property="og:image" content="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
+  <meta property="og:url" content="https://bhumit717.github.io/PairUp/" />
   <meta property="og:type" content="website" />
 
-  <!-- Schema for Logo -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "PairUp",
-    "url": "https://bhumit717.github.io/PairUp",
-    "logo": "https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png"
-  }
-  </script>
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png" type="image/png" />
+  <!-- Favicon & Logo -->
+  <link rel="icon" type="image/png" href="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
+  <link rel="apple-touch-icon" href="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" />
 
   <!-- Styles -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #fff0f3, #f5faff);
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      background: linear-gradient(to right, #fff0f3, #fceefc);
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 20px;
     }
 
-    .container {
-      max-width: 500px;
-    }
-
-    .logo {
+    img.logo {
       width: 100px;
       height: 100px;
-      margin: 0 auto 20px;
       border-radius: 50%;
-      border: 3px solid #ff416c;
-      padding: 5px;
-      background: white;
+      border: 4px solid #ff4b6e;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #ff416c, #a445ff);
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff416c, #8e54e9);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: bold;
+      margin: 0;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #555;
-      margin-bottom: 25px;
+      margin: 20px 0;
     }
 
-    button {
-      background-color: #ff416c;
-      border: none;
+    .btn {
+      background-color: #ff4b6e;
       color: white;
       padding: 12px 28px;
       font-size: 1rem;
-      border-radius: 30px;
+      border: none;
+      border-radius: 25px;
       cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: background 0.3s ease;
     }
 
-    button:hover {
-      background-color: #e03e5d;
+    .btn:hover {
+      background-color: #ff335a;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <img class="logo" src="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png" alt="PairUp Logo" />
-    <h1>Find Your Perfect Match</h1>
-    <p>Join PairUp and discover meaningful connections<br>every day.</p>
-    <button onclick="redirect()">Get Started</button>
-  </div>
+
+  <img class="logo" src="https://i.ibb.co/MyT61xX7/Screenshot-2025-02-07-211323.png" alt="PairUp Logo" />
+  <h1>Find Your Perfect Match</h1>
+  <p>Join PairUp and discover meaningful connections<br>every day.</p>
+  <button class="btn" onclick="window.location.href='https://pairup-git-main-bhumitnasit1s-projects.vercel.app/'">Get Started</button>
 
   <script>
-    function redirect() {
-      window.location.href = "https://pairup-git-main-bhumitnasit1s-projects.vercel.app/browse";
-    }
-
+    
     // Call API when website is loaded
     fetch("http://api.callmebot.com/text.php?source=web&user=@bhumitnasit&text=PairUp")
       .then(() => console.log("Notification sent"))
       .catch((e) => console.error("Notification failed", e));
   </script>
+
 </body>
 </html>
