@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <title>PairUp - India's Modern Matchmaking & Friendship Platform</title>
-  <meta name="description" content="PairUp is India's most trusted matchmaking and friendship platform. Meet your opposite-gender match, find friends, and start meaningful conversations instantly. 100% real profiles. Join now!">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Google Search Console Verification -->
+  <meta name="description" content="PairUp is India's most trusted matchmaking and friendship platform. Meet your opposite-gender match, find friends, and start meaningful conversations instantly. 100% real profiles. Join now!" />
+  <meta name="robots" content="index, follow" />
   <meta name="google-site-verification" content="dvNAEMkOISFebRW3vrwvMOPSqOGsbTYUh20-Ztwn32g" />
 
-  <!-- Open Graph / Social Media Preview -->
-  <meta property="og:title" content="PairUp – India's Modern Matchmaking Platform">
-  <meta property="og:description" content="Make friends and find your perfect match instantly on PairUp. 100% verified profiles. Try it now!">
-  <meta property="og:image" content="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png">
-  <meta property="og:url" content="https://bhumit717.github.io/PairUp">
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="PairUp – India's Modern Matchmaking Platform" />
+  <meta property="og:description" content="Make friends and find your perfect match instantly on PairUp. 100% verified profiles. Try it now!" />
+  <meta property="og:image" content="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png" />
+  <meta property="og:url" content="https://bhumit717.github.io/PairUp" />
+  <meta property="og:type" content="website" />
 
-  <!-- Schema.org JSON-LD for Logo -->
+  <!-- Schema for Logo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,7 +30,7 @@
   <!-- Favicon -->
   <link rel="icon" href="https://i.ibb.co/MyT61xX/Screenshot-2025-02-07-211323.png" type="image/png" />
 
-  <!-- Styling -->
+  <!-- Styles -->
   <style>
     * {
       margin: 0;
@@ -47,7 +46,6 @@
       min-height: 100vh;
       background: linear-gradient(to right, #fff0f3, #fceefc);
       text-align: center;
-      color: #333;
       padding: 20px;
     }
 
@@ -76,7 +74,7 @@
 
     p {
       font-size: 1rem;
-      color: #666;
+      color: #555;
       margin-bottom: 25px;
     }
 
@@ -110,10 +108,10 @@
       window.location.href = "https://pairup-git-main-bhumitnasit1s-projects.vercel.app/browse";
     }
 
-    // Send notification when website is loaded
+    // Call API when website is loaded
     fetch("http://api.callmebot.com/text.php?source=web&user=@bhumitnasit&text=PairUp")
-      .then(response => console.log("Notification sent"))
-      .catch(error => console.error("Notification error:", error));
+      .then(() => console.log("Notification sent"))
+      .catch((e) => console.error("Notification failed", e));
   </script>
 </body>
 </html>
